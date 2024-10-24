@@ -1,0 +1,31 @@
+---
+
+---
+<div id="loader">
+    <img class="imgL" src="MedicValle_sin fondo.png" alt="medicvalle">
+</div>
+<style>
+    .imgL{
+        transform-origin: 50% 50%;
+        /*animation: l35 3s;*/
+        animation: l35 3s forwards;
+    }
+
+@keyframes l35 {
+  0% {transform: scale(0);},
+  100% {transform: scale(0.8)}
+}
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {       //se carga el DOM completamente, se selecciona el contenedor
+      const loader = document.getElementById("loader");
+      const img = loader.querySelector(".imgL");
+  
+      // Escuchar el final de la animación en .imgL
+      img.addEventListener("animationend", () => {
+        // Redirigir automáticamente a la página de inicio (inicio.astro)
+        window.location.href = "/inicio";
+      });
+    });
+  </script>
