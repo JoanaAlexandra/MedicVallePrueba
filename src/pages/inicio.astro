@@ -1,4 +1,6 @@
 ---
+import Footer from '../componentes/Footer.astro';
+import Navigation from '../componentes/Navigation.astro';
 const pageTitle = "Inicio";
 ---
 
@@ -10,15 +12,11 @@ const pageTitle = "Inicio";
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="stylesheet" href="/src/styles/style_inicio.css">
     <meta name="generator" content={Astro.generator} >
-    <title>Inicio</title>
+    <title>MedicValle</title>
   </head>
     <body>
     <div class="nav-bar">
-    <a href="/">INICIO</a>
-    <a href="/servicios/">SERVICIOS</a>
-    <a href="/sorteo/">SORTEO</a>
-    <a href="/directormedico/">DIRECTOR MÉDICO</a>
-    <a href="/contactos/">CONTACTOS</a>
+    <Navigation />
     </div>
     
     <div class="carrusel">

@@ -1,4 +1,6 @@
 ---
+import Footer from '../componentes/Footer.astro';
+import Navigation from '../componentes/Navigation.astro';
 import '../styles/global.css';
 
 const pageTitle = "Contactos";
@@ -12,7 +14,8 @@ const textCase = "uppercase";
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Contactos</title>
+    <title>MedicValle</title>
+    
     <style define:vars={{skillColor, fontWeight, textCase}}>
         h2{
           color: #22448b;
@@ -22,19 +25,16 @@ const textCase = "uppercase";
         color: var(--skillColor);
         font-weight: var(--fontWeight);
         text-transform: var(--textCase);
-  }
+        }
     </style>
 
   </head>
+  <Footer/>
   <body>
 
     <div class="nav-bar">
-      <a href="/">INICIO</a>
-      <a href="/servicios/">SERVICIOS</a>
-      <a href="/sorteo/">SORTEO</a>
-      <a href="/directormedico/">DIRECTOR MÉDICO</a>
-      <a href="/contactos/">CONTACTOS</a>
-      </div>
+      <Navigation />
+    </div>
     
     <h2>Dirección:</h2>
     <p>Av. General Rumiñahui e Isla Genovesa</p>
