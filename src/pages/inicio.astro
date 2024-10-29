@@ -1,21 +1,48 @@
 ---
-
+const pageTitle = "Inicio";
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Comaptible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/styles/style_inicio.css">
     <meta name="generator" content={Astro.generator} >
-    <title>MedicValle</title>
+    <title>Inicio</title>
   </head>
     <body>
-
+    <div class="nav-bar">
     <a href="/">INICIO</a>
     <a href="/servicios/">SERVICIOS</a>
+    <a href="/sorteo/">SORTEO</a>
+    <a href="/directormedico/">DIRECTOR MÉDICO</a>
     <a href="/contactos/">CONTACTOS</a>
+    </div>
     
-    <h1>MedicValle Site</h1>
-  </body>
+    <div class="carrusel">
+      <div class="atras">
+        <img id="atras" src="/atras.svg" alt="atras" loading="lazy">
+      </div>
+
+      <div class="imagenes">
+        <div id="img">
+          <img class="img" "/medic_entrada2.jpeg" alt="imagen 1" loading="lazy">
+        </div>
+        <div id="texto" class="texto">
+          <h3>MÁS DE 25 AÑOS</h3>
+          <p>COMPROMETIDOS CON EL PACIENTE</p>
+        </div>
+      </div>
+      
+      <div class="adelante">
+        <img id="adelante" src="/adelante.svg" alt="adelante" loading="lazy">
+      </div>
+    </div>
+
+    <div class="puntos" id="puntos"></div>
+
+    <script src="/src/scripts/carrusel.js" type="module"></script>
+    </body>
 </html>

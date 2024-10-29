@@ -1,20 +1,40 @@
 ---
+import '../styles/global.css';
 
+const pageTitle = "Contactos";
+
+const skillColor = "navy";
+const fontWeight = "bold";
+const textCase = "uppercase";
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} >
-    <title>MedicValle</title>
+    <title>Contactos</title>
+    <style define:vars={{skillColor, fontWeight, textCase}}>
+        h2{
+          color: #22448b;
+          font-size: 4rem;
+        }
+        .skill {
+        color: var(--skillColor);
+        font-weight: var(--fontWeight);
+        text-transform: var(--textCase);
+  }
+    </style>
+
   </head>
   <body>
 
-    <a href="/">INICIO</a>
-    <a href="/servicios/">SERVICIOS</a>
-    <a href="/contactos/">CONTACTOS</a>
+    <div class="nav-bar">
+      <a href="/">INICIO</a>
+      <a href="/servicios/">SERVICIOS</a>
+      <a href="/sorteo/">SORTEO</a>
+      <a href="/directormedico/">DIRECTOR MÉDICO</a>
+      <a href="/contactos/">CONTACTOS</a>
+      </div>
     
     <h2>Dirección:</h2>
     <p>Av. General Rumiñahui e Isla Genovesa</p>
