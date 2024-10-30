@@ -1,14 +1,16 @@
 ---
 import Footer from '../componentes/Footer.astro';
 import Navigation from '../componentes/Navigation.astro';
-import '../styles/global.css';
+import BaseLayout from '../layouts/BaseLayout.astro';
 
 const pageTitle = "Contactos";
-
 const skillColor = "navy";
 const fontWeight = "bold";
 const textCase = "uppercase";
 ---
+<BaseLayout pageTitle={pageTitle}>
+  <h2>My awesome blog subtitle</h2>
+</BaseLayout>
 
 <html lang="en">
   <head>
@@ -16,25 +18,19 @@ const textCase = "uppercase";
     <meta name="viewport" content="width=device-width" />
     <title>MedicValle</title>
     
-    <style define:vars={{skillColor, fontWeight, textCase}}>
-        h2{
-          color: #22448b;
-          font-size: 4rem;
-        }
-        .skill {
+    <style define:vars={{ '--skillColor': skillColor, '--fontWeight': fontWeight, '--textCase': textCase }}>
+      h2 {
+        color: #22448b;
+        font-size: 4rem;
+      }
+      .skill {
         color: var(--skillColor);
         font-weight: var(--fontWeight);
         text-transform: var(--textCase);
-        }
+      }
     </style>
-
   </head>
-  <Footer/>
-  <script>
-    document.querySelector('.hamburger').addEventListener('click', () => {
-      document.querySelector('.nav-links').classList.toggle('expanded');
-    });
-  </script>
+    
   <body>
 
     <div class="nav-bar">
@@ -51,13 +47,9 @@ const textCase = "uppercase";
     <h2>Email:</h2>
     <p>@medicvalle.com</p>
 
-    <h2> Síguenos en nuestras redes solciales</h2>
-    <h3>Facebook:</h3>
-    <p>Clínica Medicvalle</p>
-    <h3>Instagram:</h3>
-    <p>@medicvalle_</p>
-    <h3>Tik Tok:</h3>
-    <p>clinica.medicvalle</p>
-
+  <Footer/>
+  <script src="../scripts/menu.js" type="module">
+  </script>
+  
   </body>
 </html>
