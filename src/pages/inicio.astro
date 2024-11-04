@@ -1,10 +1,9 @@
 ---
-import Footer from '../componentes/Footer.astro';
 import Header from '../componentes/Header.astro';
-const pageTitle = "Inicio";
+const pageTitle = "MedicValle";
 ---
 
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -12,12 +11,12 @@ const pageTitle = "Inicio";
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="stylesheet" href="/src/styles/style_inicio.css">
     <meta name="generator" content={Astro.generator} >
-    <title>MedicValle</title>
+    <title>{pageTitle}</title>
   </head>
-    <body>
-    <div class="nav-bar">
-    <Header />
-    </div>
+  <body>
+      <div class="nav-bar">
+        <Header />
+      </div>
     
     <div class="carrusel">
       <div class="atras">
@@ -26,7 +25,7 @@ const pageTitle = "Inicio";
 
       <div class="imagenes">
         <div id="img">
-          <img class="img" "/medic_entrada2.jpeg" alt="imagen 1" loading="lazy">
+          <img class="img" src="/medic_entrada2.jpeg" alt="imagen 1" loading="lazy">
         </div>
         <div id="texto" class="texto">
           <h3>MÁS DE 25 AÑOS</h3>
@@ -41,11 +40,7 @@ const pageTitle = "Inicio";
 
     <div class="puntos" id="puntos"></div>
 
-    <script src="/src/scripts/carrusel.js" type="module"></script>
-    
-    <script>
-      import"../scripts/menu.js";
-   </script>
-   
-  </body>
+<script src="/src/scripts/carrusel.js" type="module"></script>
+</body>
+<script src="/src/scripts/menu.js" type="module"></script>
 </html>

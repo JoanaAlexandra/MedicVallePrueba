@@ -27,49 +27,53 @@ let imagenes = [
     {
         "url": "/descuentos.png",
         "nombre": "DESCUENTOS",
-        "descripcion": "SIGNOS VITALES GRATIS"
+        "descripcion": "EN VARIAS ÁREAS"
     },
 ];
 
-// Seleccionamos los elementos del DOM después de asegurarnos de que la página se haya cargado completamente
-document.addEventListener("DOMContentLoaded", () => {
-    let atras = document.getElementById('atras');
-    let adelante = document.getElementById('adelante');
-    let imagen = document.getElementById('img');
-    let puntos = document.getElementById('puntos');
-    let texto = document.getElementById('texto');
-    let actual = 0;
+let atras = document.getElementById('atras');
+let adelante = document.getElementById('adelante');
+let imagen = document.getElementById('img');
+let puntos = document.getElementById('puntos');
+let texto = document.getElementById('texto')
+let actual = 0
+actualizarCarrusel();
 
-    // Función para actualizar la imagen y texto del carrusel
-    function actualizarCarrusel() {
-        imagen.innerHTML = `<img class="img" src="${imagenes[actual].url}" alt="imagen ${actual + 1}" loading="lazy">`;
-        texto.innerHTML = `
-            <h3>${imagenes[actual].nombre}</h3>
-            <p>${imagenes[actual].descripcion}</p>
-        `;
-        actualizarPuntos();
+atras.addEventListener('click', function(){
+    actual -=1;
+
+    if (actual == -1){
+        actual = imagenes.length - 1
     }
-
-    // Función para actualizar los puntos indicadores del carrusel
-    function actualizarPuntos() {
-        puntos.innerHTML = "";
-        for (let i = 0; i < imagenes.length; i++) {
-            puntos.innerHTML += `<p class="${i === actual ? 'bold' : ''}">.</p>`;
-        }
-    }
-
-    // Evento para botón "atras"
-    atras.addEventListener('click', () => {
-        actual = (actual - 1 + imagenes.length) % imagenes.length;
-        actualizarCarrusel();
-    });
-
-    // Evento para botón "adelante"
-    adelante.addEventListener('click', () => {
-        actual = (actual + 1) % imagenes.length;
-        actualizarCarrusel();
-    });
-
-    // Inicializar el carrusel
     actualizarCarrusel();
-});
+    });
+
+adelante.addEventListener('click', function(){
+    actual +=1;
+    
+    if (actual == imagenes.length){
+        actual = 0;
+    }
+    actualizarCarrusel();
+    });
+
+function actualizarCarrusel(){
+    imagen.innerHTML = ` <img class="img" src="${imagenes[actual].url}" alt="logo pagina" loading="lazy"></img>`;
+    texto.innerHTML = `
+    <h3>${imagenes[actual].nombre}</h3>
+    <p>${imagenes[actual].descripcion}</p>
+    `;
+    posicionCarrusel();
+} 
+
+function posicionCarrusel() {
+    puntos.innerHTML = "";
+    for (var i = 0; i <imagenes.length; i++){
+        if(i == actual){
+            puntos.innerHTML += '<p class="bold">.<p>';
+        }
+        else{
+            puntos.innerHTML += '<p>.<p>';
+        }
+    } 
+}

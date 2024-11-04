@@ -1,9 +1,11 @@
 ---
 
 ---
+
 <div id="loader">
     <img class="imgL" src="MedicValle_sin fondo.png" alt="medicvalle">
 </div>
+
 <style>
     .imgL{
         transform-origin: 50% 50%;
@@ -12,7 +14,7 @@
     }
 
 @keyframes l35 {
-  0% {transform: scale(0);},
+  0% {transform: scale(0);}
   100% {transform: scale(0.8)}
 }
 </style>
@@ -24,8 +26,10 @@
   
       // Escuchar el final de la animación en .imgL
       img.addEventListener("animationend", () => {
+        setTimeout(()=>{
         // Redirigir automáticamente a la página de inicio (inicio.astro)
         window.location.href = "/inicio";
-      });
+        },500);
     });
-  </script>
+  });
+</script>

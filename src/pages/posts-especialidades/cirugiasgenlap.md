@@ -1,13 +1,9 @@
 ---
-title: My Third Blog Post
-author: Astro Learner
-description: "I had some challenges, but asking in the community really helped!"
+layout: ../../layouts/MarkdownPostLayout.astro
+title: CIRUGÍA GENERAL Y LAPAROSCÓPICA
+description: "Atendemos y realizamos procedimientos quirúrgicos, tanto convencionales como mínimamente invasivos, para tratar diversas patologías."
 image:
-    url: "https://docs.astro.build/assets/rays.webp"
-    alt: "The Astro logo on a dark background with rainbow rays."
-pubDate: 2022-07-15
+    url: "/quirofano2.webp"
+    alt: "imagenquir2"
 tags: ["astro", "learning in public", "setbacks", "community"]
 ---
-# CIRUGÍA GENERAL Y LAPAROSCÓPICA
-
-Atendemos y realizamso procedimientos quirúrgicos, tanto convencionales como mínimamente invasivos, para tratar diversas patologías.

@@ -1,55 +1,38 @@
 ---
 import Footer from '../componentes/Footer.astro';
-import Navigation from '../componentes/Navigation.astro';
-import BaseLayout from '../layouts/BaseLayout.astro';
-
-const pageTitle = "Contactos";
-const skillColor = "navy";
-const fontWeight = "bold";
-const textCase = "uppercase";
+import Header from '../componentes/Header.astro';
+const pageTitle = "MedicValle";
+const skillColor="navy";
 ---
-<BaseLayout pageTitle={pageTitle}>
-  <h2>My awesome blog subtitle</h2>
-</BaseLayout>
-
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>MedicValle</title>
-    
-    <style define:vars={{ '--skillColor': skillColor, '--fontWeight': fontWeight, '--textCase': textCase }}>
-      h2 {
-        color: #22448b;
-        font-size: 4rem;
-      }
-      .skill {
-        color: var(--skillColor);
-        font-weight: var(--fontWeight);
-        text-transform: var(--textCase);
-      }
-    </style>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta http-equiv="X-UA-Comaptible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/styles/style_inicio.css">
+    <meta name="generator" content={Astro.generator} >
+    <title>{pageTitle}</title>
   </head>
-    
+  
   <body>
-
     <div class="nav-bar">
-      <Navigation />
+      <Header />
     </div>
     
-    <h2>Dirección:</h2>
+    <h2 class="skill">Dirección:</h2>
     <p>Av. General Rumiñahui e Isla Genovesa</p>
-
-    <h2>Teléfonos:</h2>
+  
+    <h2 class="skill">Teléfonos:</h2>
     <p>+593 96 252 6540</p>
     <p>+593 (02) 286 1949</p>
     
-    <h2>Email:</h2>
+    <h2 class="skill">Email:</h2>
     <p>@medicvalle.com</p>
-
-  <Footer/>
-  <script src="../scripts/menu.js" type="module">
-  </script>
   
+    <Footer/>
   </body>
+
+  <script src="/src/scripts/menu.js" type="module"></script>
+  
 </html>

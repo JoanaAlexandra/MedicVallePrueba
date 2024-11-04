@@ -1,55 +1,15 @@
 ---
-
-import Footer from '../componentes/Footer.astro';import Navigation from '../componentes/Navigation.astro';
-import '../styles/global.css';
-const pageTitle = "Servicios";
+import BaseLayout from "../layouts/BaseLayout.astro";
+const allPosts=await Astro.glob('./posts-especialidades/*.md');
+const pageTitle = "Inicio";
 ---
-<html lang="en"></html>
-<head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} >
-    <title>MedicValle</title>
-  </head>
-<body>
-  <div class="nav-bar">
-  <Navigation />
-  </div>
+
+<BaseLayout pageTitle={pageTitle}>
+      <h2>ESPECIALIDADES</h2>
+      
+      <p>MedicValle cuenta con las siguientes especialidades</p>
   
-  
-    <h2>ESPECIALIDADES</h2>
-    
-    <p>MedicValle cuenta con las siguientes especialidades</p>
-
-    <ul>
-        <li><a href="/posts/cirugiasgenlap/">CIRUGIA GENERAL Y LAPAROSCOPICA</a></li>
-        <li><a href="/posts/cirugiavascular/">CIRUGIA VASCULAR</a></li>
-        <li><a href="/posts/coloproctologia/">COLOPROCTOLOGIA</a></li>
-        <li><a href="/posts/ecogracfia/">ECOGRAFIA GENERAL Y OBSTETRICA 4-5D</a></li>
-        <li><a href="/posts/endoscopia/">ENDOSCOPIA</a></li>
-        <li><a href="/posts/farmacia/">FARMACIA</a></li>
-        <li><a href="/posts/fisio/">FISIOTERAPIA</a></li>
-        <li><a href="/posts/gastroenterologia/">GASTROENTEROLOGIA</a></li>
-        <li><a href="/posts/ginecologia/">GINECOLOGIA</a></li>
-        <li><a href="/posts/labo/">LABORATORIO CLINICO</a></li>
-        <li><a href="/posts/medicinageneral/">MEDICINA GENERAL</a></li>
-        <li><a href="/posts/neo/">NEONATOLOGIA</a></li>
-        <li><a href="/posts/neuropediatrica/">NEUROLOGIA PEDIATRICA</a></li>
-        <li><a href="/posts/nutricion/">NUTRICION Y DIETETICA</a></li>
-        <li><a href="/posts/ofta/">OFTALMOLOGIA</a></li>        
-        <li><a href="/posts/otorrinolaringologia/">OTORRRINOLARINGOLOGIA</a></li>
-        <li><a href="/posts/pediatria/">PEDIATRIA</a></li>        
-        <li><a href="/posts/psicologia/">PSICOLOGIA</a></li>
-        <li><a href="/posts/rayosx/">RAYOS X</a></li>
-        <li><a href="/posts/trauma/">TRAUMATOLOGIA</a></li>
-        <li><a href="/posts/uci/">UNIDAD DE CUIDADOS INTENSIVOS</a></li>
-        <li><a href="/posts/urologia/">UROLOGIA</a></li>   
-    </ul>
-
-  <script>
-     import"../scripts/menu.js";
-  </script>
-
-  </body>
-</html>
+      <ul>
+          {allPosts.map((post)=> <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
+      </ul>
+</BaseLayout>

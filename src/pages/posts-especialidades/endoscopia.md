@@ -1,13 +1,9 @@
 ---
-title: My Third Blog Post
-author: Astro Learner
-description: "I had some challenges, but asking in the community really helped!"
+layout: ../../layouts/MarkdownPostLayout.astro
+title: ENDOSCOPIA
+description: "Realizamos procedimientos médicos mediante un endoscopio para diagnosticar y tratar problemas digestivos y respiratorios."
 image:
-    url: "https://docs.astro.build/assets/rays.webp"
-    alt: "The Astro logo on a dark background with rainbow rays."
-pubDate: 2022-07-15
+    url: "/endoscopia.jpg"
+    alt: "imagenendoscopia"
 tags: ["astro", "learning in public", "setbacks", "community"]
 ---
-# ENDOSCOPIA
-
-Realizamos procedimientos médicos mediante un endoscopio para diagnosticar y tratar problemas digestivos y respiratorios.

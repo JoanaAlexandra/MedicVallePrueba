@@ -1,13 +1,10 @@
 ---
-title: My Third Blog Post
-author: Astro Learner
-description: "I had some challenges, but asking in the community really helped!"
+layout: ../../layouts/MarkdownPostLayout.astro
+title: FARMACIA
+description: "Ofrecemos medicamentos prescritos por los médicos, además de brindar asesoramiento sobre su uso adecuado."
 image:
-    url: "https://docs.astro.build/assets/rays.webp"
-    alt: "The Astro logo on a dark background with rainbow rays."
-pubDate: 2022-07-15
+    url: "/farmacia.jpeg"
+    alt: "imagenfarma"
 tags: ["astro", "learning in public", "setbacks", "community"]
 ---
-# FARMACIA
 
-Ofrecemos medicamentos prescritos por los médicos, además de brindar asesoramiento sobre su uso adecuado.

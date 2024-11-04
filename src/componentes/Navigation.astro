@@ -1,9 +1,69 @@
 ---
 ---
-<div class="nav-links">
-    <a href="/">INICIO</a>
-    <a href="/servicios/">SERVICIOS</a>
-    <a href="/sorteo/">SORTEO</a>
-    <a href="/directormedico/">DIRECTOR MÉDICO</a>
-    <a href="/contactos/">CONTACTOS</a> 
+<div class="nav-container">
+    <div class="hamburger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+    </div>
+
+    <div class="nav-links">
+        <a href="/">INICIO</a>
+        <a href="/servicios/">SERVICIOS</a>
+        <a href="/sorteo/">SORTEO</a>
+        <a href="/directormedico/">DIRECTOR MÉDICO</a>
+        <a href="/contactos/">CONTACTOS</a> 
+    </div>
 </div>
+
+<style>
+
+.nav-links {    /* oculta el menú en pantallas peques */
+    display: none;
+    flex-direction: line;
+}
+
+.nav-links.expanded {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Espaciado entre los enlaces del menú */
+.nav-links a {
+    margin-right: 70px; /* Ajusta este valor para el espacio que prefieras */
+    text-decoration: none;
+    color: #000000;
+    }
+
+.nav-links a:last-child {
+    margin-right: 0; /* Elimina el margen del último enlace */
+}
+
+.hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: #3db3ab;
+}
+
+@media (min-width: 768px) {
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        background-color: transparent;
+        padding: 0;
+        border: none;
+    }
+    .hamburger {
+        display: none;
+    }
+}
+
+</style>

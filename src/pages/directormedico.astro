@@ -1,56 +1,54 @@
 ---
-import Footer from '../componentes/Footer.astro';
-import Navigation from '../componentes/Navigation.astro';
-import '../styles/global.css';
-const pageTitle = "Servicios";
+import Header from '../componentes/Header.astro';
+const pageTitle = "MedicValle";
 ---
-
-<html lang="en"></html>
-<head>
+<html lang="es">
+  <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Comaptible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/styles/style_inicio.css">
     <meta name="generator" content={Astro.generator} >
-    <title>MedicValle</title>
+    <title>{pageTitle}</title>
   </head>
 
 <body>
   <div class="nav-bar">
-  <Navigation />
-  </div>
-
-  <h2>ESPECIALIDADES</h2>
+    <Header />
+  </div> 
+  
+    <h2>MÉDICOS</h2>
+      
+      <p>MedicValle cuenta con las siguientes especialidades</p>
+  
+      <ul>
+          <li><a href="/posts-medicos/cirujanogral/">CIRUJANO GENERAL Y LAPAROSCÓPICO</a></li>
+          <li><a href="/posts-medicos/cirujanovas/">CIRUJANO VASCULAR</a></li>
+          <li><a href="/posts-medicos/coloproctologo/">COLOPROCTÓLOGO</a></li>
+          <li><a href="/posts-medicos/ecografistaob/">ECOGRAFISTA Y OBSTETRA</a></li>
+          <li><a href="/posts-medicos/endoscopista/">ENDOSCOPISTA</a></li>
+          <li><a href="/posts-medicos/farmaceutico/">FARMACÉUTICO</a></li>
+          <li><a href="/posts-medicos/fisioterapista/">FISIOTERAPISTA</a></li>
+          <li><a href="/posts-medicos/gastro/">GASTROENTERÓLOGO</a></li>
+          <li><a href="/posts-medicos/ginecologo/">GINECÓLOGO</a></li>
+          <li><a href="/posts-medicos/laboratorista/">LABORATORISTA CLÍNICO</a></li>
+          <li><a href="/posts-medicos/medgen/">MÉDICO GENERAL</a></li>
+          <li><a href="/posts-medicos/neonatologo/">NEONATÓLOGO</a></li>
+          <li><a href="/posts-medicos/neuroped/">NEURÓLOGO PEDIÁTRICO</a></li>
+          <li><a href="/posts-medicos/nutricionista/">NUTRICIONISTA</a></li>
+          <li><a href="/posts-medicos/oftalmologo/">OFTALMÓLOGO</a></li>        
+          <li><a href="/posts-medicos/otorrino/">OTORRRINOLARINGOLO</a></li>
+          <li><a href="/posts-medicos/pediatra/">PEDIATRA</a></li>        
+          <li><a href="/posts-medicos/psicologo/">PSICÓLOGO</a></li>
+          <li><a href="/posts-medicos/licrx/">LIC. RAYOS X</a></li>
+          <li><a href="/posts-medicos/traumatologo/">TRAUMATÓLOGO</a></li>
+          <li><a href="/posts-medicos/equipouci/">EQUIPO UCI</a></li>
+          <li><a href="/posts-medicos/urologo/">URÓLOGO</a></li>   
+      </ul>
     
-    <p>MedicValle cuenta con las siguientes especialidades</p>
+</body>
 
-    <ul>
-        <li><a href="/posts/cirugiasgenlap/">CIRUGIA GENERAL Y LAPAROSCOPICA</a></li>
-        <li><a href="/posts/cirugiavascular/">CIRUGIA VASCULAR</a></li>
-        <li><a href="/posts/coloproctologia/">COLOPROCTOLOGIA</a></li>
-        <li><a href="/posts/ecogracfia/">ECOGRAFIA GENERAL Y OBSTETRICA 4-5D</a></li>
-        <li><a href="/posts/endoscopia/">ENDOSCOPIA</a></li>
-        <li><a href="/posts/farmacia/">FARMACIA</a></li>
-        <li><a href="/posts/fisio/">FISIOTERAPIA</a></li>
-        <li><a href="/posts/gastroenterologia/">GASTROENTEROLOGIA</a></li>
-        <li><a href="/posts/ginecologia/">GINECOLOGIA</a></li>
-        <li><a href="/posts/labo/">LABORATORIO CLINICO</a></li>
-        <li><a href="/posts/medicinageneral/">MEDICINA GENERAL</a></li>
-        <li><a href="/posts/neo/">NEONATOLOGIA</a></li>
-        <li><a href="/posts/neuropediatrica/">NEUROLOGIA PEDIATRICA</a></li>
-        <li><a href="/posts/nutricion/">NUTRICION Y DIETETICA</a></li>
-        <li><a href="/posts/ofta/">OFTALMÓLOGO José Vargas</a></li>        
-        <li><a href="/posts/otorrinolaringologia/">OTORRRINOLARINGOLOGIA</a></li>
-        <li><a href="/posts/pediatria/">PEDIATRIA</a></li>        
-        <li><a href="/posts/psicologia/">PSICOLOGIA</a></li>
-        <li><a href="/posts/rayosx/">RAYOS X</a></li>
-        <li><a href="/posts/trauma/">TRAUMATOLOGIA</a></li>
-        <li><a href="/posts/uci/">UNIDAD DE CUIDADOS INTENSIVOS</a></li>
-        <li><a href="/posts/urologia/">UROLOGIA</a></li>   
-    </ul>
+<script src="/src/scripts/menu.js" type="module"></script>
 
-    <script>
-      import"../scripts/menu.js";
-   </script>
-   
-  </body>
 </html>

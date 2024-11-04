@@ -1,0 +1,23 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+const { frontmatter } = Astro.props;
+---
+<BaseLayout pageTitle ={frontmatter.title}>
+<h1>{frontmatter.title}</h1>
+<p><em>{frontmatter.description}</em></p>
+
+{frontmatter.image &&(
+<img src={frontmatter.image.url} width="350" alt={frontmatter.image.alt} />
+)}
+
+{frontmatter.video && (
+    <figure>
+    <video src={frontmatter.video.url} autoplay muted controls width="50%">
+      <source src={frontmatter.video.url} type="video/mp4" />
+      Tu navegador no soporta el elemento de video.
+    </video>
+     <figcaption>{frontmatter.video.alt}</figcaption>
+    </figure>
+  )}
+<slot />
+</BaseLayout>

@@ -8,6 +8,6 @@ image:
 pubDate: 2022-07-15
 tags: ["astro", "learning in public", "setbacks", "community"]
 ---
-# ECOGRAFÍA GENERAL Y OBSTÉTRICA 4-5D 
+# PEDIATRA
 
-Ofrecemos imágenes por ultrasonido para evaluar órganos internos y el desarrollo fetal durante el embarazo, con tecnología avanzada que permite visualizar en detalle.
+Especialista en la salud infantil que evalúa y trata enfermedades y problemas de desarrollo en niños y adolescentes. Acompaña el crecimiento del paciente desde la niñez hasta la adolescencia.
