@@ -1,13 +1,10 @@
 ---
-title: My Third Blog Post
-author: Astro Learner
-description: "I had some challenges, but asking in the community really helped!"
+layout: ../../layouts/MarkdownPostLayout.astro
+title: LABORATORIO CLÍNICO
+description: "Realizamos análisis de muestras biológicas (sangre, orina, tejidos) para ayudar en el diagnóstico y seguimiento de enfermedades."
 image:
-    url: "https://docs.astro.build/assets/rays.webp"
-    alt: "The Astro logo on a dark background with rainbow rays."
-pubDate: 2022-07-15
+    url: "/lab2.jpeg"
+    alt: "imagenlab"
 tags: ["astro", "learning in public", "setbacks", "community"]
 ---
-# LABORATORIO CLÍNICO
 
-Realizamos análisis de muestras biológicas (sangre, orina, tejidos) para ayudar en el diagnóstico y seguimiento de enfermedades.

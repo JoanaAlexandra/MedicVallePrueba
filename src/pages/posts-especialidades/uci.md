@@ -1,13 +1,9 @@
 ---
-title: My Third Blog Post
-author: Astro Learner
-description: "I had some challenges, but asking in the community really helped!"
+layout: ../../layouts/MarkdownPostLayout.astro
+title: UNIDAD DE CUIDADOS INTENSIVOS
+description: "Proporcionamos atención especializada a pacientes en estado crítico que requieren monitoreo continuo y tratamientos avanzados."
 image:
-    url: "https://docs.astro.build/assets/rays.webp"
-    alt: "The Astro logo on a dark background with rainbow rays."
-pubDate: 2022-07-15
+    url: "/uci2.jpg"
+    alt: "imagenuci2"
 tags: ["astro", "learning in public", "setbacks", "community"]
 ---
-# UNIDAD DE CUIDADOS INTENSIVOS
-
-Proporcionamos atención especializada a pacientes en estado crítico que requieren monitoreo continuo y tratamientos avanzados.

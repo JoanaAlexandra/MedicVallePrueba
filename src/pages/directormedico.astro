@@ -1,54 +1,13 @@
 ---
-import Header from '../componentes/Header.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
+const allPosts=await Astro.glob('./posts-medicos/*.md');
 const pageTitle = "MedicValle";
 ---
-<html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta http-equiv="X-UA-Comaptible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/styles/style_inicio.css">
-    <meta name="generator" content={Astro.generator} >
-    <title>{pageTitle}</title>
-  </head>
-
-<body>
-  <div class="nav-bar">
-    <Header />
-  </div> 
-  
-    <h2>MÉDICOS</h2>
+<BaseLayout pageTitle={pageTitle}>
+  <h2>MÉDICOS</h2>
       
-      <p>MedicValle cuenta con las siguientes especialidades</p>
-  
-      <ul>
-          <li><a href="/posts-medicos/cirujanogral/">CIRUJANO GENERAL Y LAPAROSCÓPICO</a></li>
-          <li><a href="/posts-medicos/cirujanovas/">CIRUJANO VASCULAR</a></li>
-          <li><a href="/posts-medicos/coloproctologo/">COLOPROCTÓLOGO</a></li>
-          <li><a href="/posts-medicos/ecografistaob/">ECOGRAFISTA Y OBSTETRA</a></li>
-          <li><a href="/posts-medicos/endoscopista/">ENDOSCOPISTA</a></li>
-          <li><a href="/posts-medicos/farmaceutico/">FARMACÉUTICO</a></li>
-          <li><a href="/posts-medicos/fisioterapista/">FISIOTERAPISTA</a></li>
-          <li><a href="/posts-medicos/gastro/">GASTROENTERÓLOGO</a></li>
-          <li><a href="/posts-medicos/ginecologo/">GINECÓLOGO</a></li>
-          <li><a href="/posts-medicos/laboratorista/">LABORATORISTA CLÍNICO</a></li>
-          <li><a href="/posts-medicos/medgen/">MÉDICO GENERAL</a></li>
-          <li><a href="/posts-medicos/neonatologo/">NEONATÓLOGO</a></li>
-          <li><a href="/posts-medicos/neuroped/">NEURÓLOGO PEDIÁTRICO</a></li>
-          <li><a href="/posts-medicos/nutricionista/">NUTRICIONISTA</a></li>
-          <li><a href="/posts-medicos/oftalmologo/">OFTALMÓLOGO</a></li>        
-          <li><a href="/posts-medicos/otorrino/">OTORRRINOLARINGOLO</a></li>
-          <li><a href="/posts-medicos/pediatra/">PEDIATRA</a></li>        
-          <li><a href="/posts-medicos/psicologo/">PSICÓLOGO</a></li>
-          <li><a href="/posts-medicos/licrx/">LIC. RAYOS X</a></li>
-          <li><a href="/posts-medicos/traumatologo/">TRAUMATÓLOGO</a></li>
-          <li><a href="/posts-medicos/equipouci/">EQUIPO UCI</a></li>
-          <li><a href="/posts-medicos/urologo/">URÓLOGO</a></li>   
-      </ul>
-    
-</body>
+  <p>MedicValle cuenta con las siguientes especialidades</p>
 
-<script src="/src/scripts/menu.js" type="module"></script>
-
-</html>
+  <ul>
+    {allPosts.map((post)=> <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
+</BaseLayout>

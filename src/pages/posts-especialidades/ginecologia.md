@@ -1,37 +1,33 @@
 ---
-title: My Second Blog Post
-author: Astro Learner
-description: "After learning some Astro, I couldn't stop!"
+layout: ../../layouts/MarkdownPostLayout.astro
+title: GINECOLOGÍA
+description: "Atención integral y especializada, enfocada en resolver las diferentes patologías de la mujer"
 image:
-    url: "https://docs.astro.build/assets/arc.webp"
-    alt: "The Astro logo on a dark background with a purple gradient arc."
-pubDate: 2022-07-08
-tags: ["astro", "blogging", "learning in public", "successes"]
+    url: "/ginecologia.jpeg"
+    alt: "imagengineco"
+tags: ["astro", "learning in public", "setbacks", "community"]
 ---
-# GINECOLOGÍA
 
-Atención integral y especializada, enfocada en resolver las diferentes patologías de la mujer.
+* Control Prenatal
 
-* *Control Prenatal*
+* Embarazo de alto riesgo
 
-* *Embarazo de alto riesgo*
+* Ecografía, ginecología y obstétrica
 
-* *Ecografía, ginecología y obstétrica*
+* Monitoreo fetal electrónico
 
-* *Monitoreo fetal electrónico*
+* Detección oportuna del cáncer cérvico uterino
 
-* *Detección oportuna del cáncer cérvico uterino*
+* Vacunas HPV
 
-* *Vacunas HPV*
+* Detección y control del HPV
 
-* *Detección y control del HPV*
+* Colposcopía
 
-* *Colposcopía*
+* Cirugía ginecológica y obstetra
 
-* *Cirugía ginecológica y obstetra*
+* Laparoscopía
 
-* *Laparoscopía*
+* Anticoncepción, (implante subdérmico)
 
-* *Anticoncepción, (implante subdérmico)*
-
-* *Menopausia*
+* Menopausia

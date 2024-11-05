@@ -1,14 +1,10 @@
 ---
-title: My Second Blog Post
-author: Astro Learner
-description: "After learning some Astro, I couldn't stop!"
+layout: ../../layouts/MarkdownPostLayout.astro
+title: MEDICINA GENERAL
+description: "Brindamos atención primaria, realizamos diagnósticos básicos, tratamos enfermedades comunes y hacemos derivaciones a especialistas según la necesidad del paciente."
 image:
-    url: "https://docs.astro.build/assets/arc.webp"
-    alt: "The Astro logo on a dark background with a purple gradient arc."
-pubDate: 2022-07-08
-tags: ["astro", "blogging", "learning in public", "successes"]
+    url: "/medigen.jpg"
+    alt: "imagenmedgen"
+tags: ["astro", "learning in public", "setbacks", "community"]
 ---
 
-# MEDICINA GENERAL
-
-Brindamos atención primaria, realizamos diagnósticos básicos, tratamos enfermedades comunes y hacemos derivaciones a especialistas según la necesidad del paciente.

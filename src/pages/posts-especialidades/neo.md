@@ -1,13 +1,9 @@
 ---
-title: My Third Blog Post
-author: Astro Learner
-description: "I had some challenges, but asking in the community really helped!"
+layout: ../../layouts/MarkdownPostLayout.astro
+title: NEONATOLOGÍA
+description: "Nos encargamos de la atención médica de los recién nacidos, especialmente de aquellos prematuros o con problemas de salud al nacer."
 image:
-    url: "https://docs.astro.build/assets/rays.webp"
-    alt: "The Astro logo on a dark background with rainbow rays."
-pubDate: 2022-07-15
+    url: "/neonato.jpg"
+    alt: "imagenneo"
 tags: ["astro", "learning in public", "setbacks", "community"]
 ---
-# NEONATOLOGÍA
-
-Nos encargamos de la atención médica de los recién nacidos, especialmente de aquellos prematuros o con problemas de salud al nacer.
