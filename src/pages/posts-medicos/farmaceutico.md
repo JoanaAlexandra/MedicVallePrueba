@@ -1,13 +1,10 @@
 ---
-title: My Third Blog Post
-author: Astro Learner
-description: "I had some challenges, but asking in the community really helped!"
+layout: ../../layouts/MarkdownPostLayout.astro
+title: FARMACÉUTICO
+author: Lcdo.
+description: "Experto en medicamentos y su correcta administración. Asesora a los pacientes sobre el uso seguro y efectivo de medicamentos, y trabaja en la dispensación, control y seguimiento de tratamientos para optimizar sus efectos y prevenir riesgos."
 image:
-    url: "https://docs.astro.build/assets/rays.webp"
-    alt: "The Astro logo on a dark background with rainbow rays."
-pubDate: 2022-07-15
+    url: "/dr.png"
+    alt: "imagenenfermeras"
 tags: ["astro", "learning in public", "setbacks", "community"]
 ---
-# FARMACÉUTICO
-
-Experto en medicamentos y su correcta administración. Asesora a los pacientes sobre el uso seguro y efectivo de medicamentos, y trabaja en la dispensación, control y seguimiento de tratamientos para optimizar sus efectos y prevenir riesgos.

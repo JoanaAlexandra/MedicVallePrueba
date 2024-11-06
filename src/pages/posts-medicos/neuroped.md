@@ -1,13 +1,10 @@
 ---
-title: My Third Blog Post
-author: Astro Learner
-description: "I had some challenges, but asking in the community really helped!"
+layout: ../../layouts/MarkdownPostLayout.astro
+title: NEURÓLOGO PEDIÁTRICO
+author: Dr.
+description: "Médico que trata trastornos neurológicos en niños, como epilepsia y trastornos del desarrollo. Ofrece diagnóstico y tratamiento enfocados en las necesidades específicas de los pacientes pediátricos."
 image:
-    url: "https://docs.astro.build/assets/rays.webp"
-    alt: "The Astro logo on a dark background with rainbow rays."
-pubDate: 2022-07-15
+    url: "/dr.png"
+    alt: "imagenendrgen"
 tags: ["astro", "learning in public", "setbacks", "community"]
 ---
-# NEURÓLOGO PEDIÁTRICO DR.
-
-Médico que trata trastornos neurológicos en niños, como epilepsia y trastornos del desarrollo. Ofrece diagnóstico y tratamiento enfocados en las necesidades específicas de los pacientes pediátricos.

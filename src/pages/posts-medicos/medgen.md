@@ -1,13 +1,10 @@
 ---
-title: My Third Blog Post
-author: Astro Learner
-description: "I had some challenges, but asking in the community really helped!"
+layout: ../../layouts/MarkdownPostLayout.astro
+title: MÉDICO GENERAL
+author: Dr.
+description: "Profesional de atención primaria que evalúa y trata problemas de salud comunes. Realiza chequeos, diagnósticos iniciales y derivaciones a especialistas cuando es necesario."
 image:
-    url: "https://docs.astro.build/assets/rays.webp"
-    alt: "The Astro logo on a dark background with rainbow rays."
-pubDate: 2022-07-15
+    url: "/dr.png"
+    alt: "imagenendrgen"
 tags: ["astro", "learning in public", "setbacks", "community"]
 ---
-# MÉDICO GENERAL DR.
-
-Profesional de atención primaria que evalúa y trata problemas de salud comunes. Realiza chequeos, diagnósticos iniciales y derivaciones a especialistas cuando es necesario.

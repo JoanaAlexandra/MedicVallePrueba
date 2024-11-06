@@ -1,18 +1,14 @@
 ---
-title: My Third Blog Post
-author: Astro Learner
-description: "I had some challenges, but asking in the community really helped!"
+layout: ../../layouts/MarkdownPostLayout.astro
+title: LABORATORISTA
+author: Lcda.
+description: "ExpertA en la realización y análisis de pruebas de laboratorio, como análisis de sangre y orina. Ayuda en el diagnóstico y monitoreo de condiciones de salud mediante la interpretación de resultados clínicos."
 image:
-    url: "https://docs.astro.build/assets/rays.webp"
-    alt: "The Astro logo on a dark background with rainbow rays."
-pubDate: 2022-07-15
+    url: "/LAB.jpeg"
+    alt: "imagenenlab"
 tags: ["astro", "learning in public", "setbacks", "community"]
 ---
-# LABORATORISTA LCDA.
-
-ExpertA en la realización y análisis de pruebas de laboratorio, como análisis de sangre y orina. Ayuda en el diagnóstico y monitoreo de condiciones de salud mediante la interpretación de resultados clínicos.
-
-Los exámenes más recomendados por nuestra laboratorista que se deben realizar regularmente son:
+Los exámenes más recomendados por nuestra laboratorista que deben realizarse regularmente son:
 
 * 1. Biometría Hemática
 * 2. Química Sanguínea
